@@ -190,11 +190,10 @@
     width: 170px;
   }
 
-    &::after {
+  &::after {
     content: "";
     display: inline-block;
     background: url("../img/arrow.png");
-    display: block;
     left: 90px;
     position: absolute;
     bottom: 4px;
@@ -225,7 +224,7 @@
     text-decoration: none;
 
     &::after {
-    background-image: url("../img/arrowx-size.png");
-}
+      background-image: url("../img/arrowx-size.png");
+    }
   }
 }

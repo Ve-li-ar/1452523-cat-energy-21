@@ -9,6 +9,7 @@
 
   &:active {
     opacity: 60%;
+
     &:last-child {
       padding-right: 0;
     }
@@ -23,6 +24,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;padding-right: 415px;
+    padding-top: 0;
+    padding-right: 415px;
   }
 }
