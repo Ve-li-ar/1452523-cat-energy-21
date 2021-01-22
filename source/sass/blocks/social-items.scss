@@ -1,4 +1,4 @@
-.social-items__list {
+.social-items {
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -71,8 +71,9 @@
   }
 }
 
-.social-item__svg {
-  &:hover {
+.social-items__svg {
+  &:hover,
+  &:focus {
     fill: $basic-green;
   }
 

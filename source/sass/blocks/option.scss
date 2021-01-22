@@ -170,42 +170,62 @@
 }
 
 .option__link {
-  text-decoration: none;
-  color: $basic-black;
-  text-transform: uppercase;
-  font-weight: 400;
   display: block;
   padding-top: 16px;
+  color: $basic-black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
   position: relative;
-  margin-right: auto;
-  margin-left: auto;
-
-  &::after {
-    content: url("../img/arrow.png");
-    display: block;
-    left: 100px;
-    position: absolute;
-    bottom: 14px;
-    width: 24px;
-    height: 12px;
-
-    &:hover {
-      content: url("../img/arrowx-size.png");
-      width: 32px;
-    }
-  }
-
-  &:active {
-    opacity: 30%;
-  }
+  font-size: 16px;
+  width: 135px;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
     padding-top: 26px;
+    width: 161px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
 
     &::after {
-      left: 134px;
-      top: 23px;
+    content: "";
+    display: inline-block;
+    background: url("../img/arrow.png");
+    display: block;
+    left: 90px;
+    position: absolute;
+    bottom: 4px;
+    width: 35px;
+    height: 15px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-width: $tablet-width) {
+      left: 122px;
     }
+  }
+
+  &:hover {
+    color: $basic-black;
+    text-decoration: none;
+
+    &::after {
+      background-image: url("../img/arrowx-size.png");
+    }
+  }
+
+  &:active,
+  &:focus {
+    opacity: 30%;
+    color: $basic-black;
+    text-decoration: none;
+
+    &::after {
+    background-image: url("../img/arrowx-size.png");
+}
   }
 }
